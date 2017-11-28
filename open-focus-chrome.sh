@@ -1,9 +1,7 @@
-#!/bin/bash
-
-Window=$(wmctrl -l | grep "Sublime")
-if [[] $Window ]]; then 
+Window=$(wmctrl -l | grep "Google Chrome")
+if [[ $Window ]]; then 
 	name=$(echo $Window | awk 'BEGIN{FS=" Imdea "} {print $2}')
 	wmctrl -a $name
 else
-	subl
+	google-chrome	
 fi
