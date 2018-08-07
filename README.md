@@ -9,3 +9,10 @@ bash /path/to/open-focus-term.sh
 
 ## open-focus scripts
 Scripts with name `open-focus-X` force the existence of a single instance of program `X`. The first time the script is invoked it runs `X`. The second time, it just focus the window in which `X` is running.
+
+## center-window script
+This script centers in the screen the current active window. The resulting window has:
+```
+window_width = 0.6 * screen_width
+window_height = screen_height
+```
