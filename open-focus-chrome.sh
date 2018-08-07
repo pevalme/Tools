@@ -1,3 +1,5 @@
+#!/bin/bash
+
 Window=$(wmctrl -l | grep "Google Chrome")
 if [[ $Window ]]; then 
 	name=$(echo $Window | awk 'BEGIN{FS=" Imdea "} {print $2}')
